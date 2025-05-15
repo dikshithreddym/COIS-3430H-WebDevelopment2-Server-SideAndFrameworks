@@ -1,0 +1,28 @@
+.Lights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.Lights button {
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+/* Light mode */
+.Lights.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+.Lights.dark {
+  background-color: #252323;
+  color: white;
+}
+
+.Lights h2 {
+  color: deeppink;
+}

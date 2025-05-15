@@ -1,0 +1,257 @@
+@import "reset.css";
+
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Satisfy&display=swap&subset=latin-ext");
+
+/*#########################################
+
+General Page Info
+
+############################################*/
+
+:root {
+  --text-color: #373d3f;
+  --main-click-color: #0061d1;
+  --main-click-hover: #0041a1;
+  --border-color: darkgray;
+  --sidebar-color: #f3f3f3;
+  --center-color: white;
+  --nav-hover: #eaeaea;
+  box-sizing: border-box;
+	min-height: 100vh;
+}
+
+:root {
+  font-family: Arimo, sans-serif;
+  color: var(--text-color);
+}
+body{
+	display:flex;
+	flex-direction:column;
+	min-height: 100vh;
+}
+
+main,
+header,
+footer {
+  max-width: 1200px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 600px;
+}
+
+/*#########################################
+
+Header Styles
+
+############################################*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+header h1 {
+  font-family: "Satisfy", serif;
+  font-size: 2.2rem;
+}
+
+header img {
+  height: 3.4rem;
+}
+
+/*#########################################
+
+Main Container Styles
+
+############################################*/
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  background-color: var(--sidebar-color);
+  border-radius: 0.75rem;
+	flex:1;
+}
+
+#center-container {
+  background-color: var(--center-color);
+  flex: 6 6 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
+nav {
+  flex: 3 3 0;
+  border-right: 2px solid var(--border-color);
+}
+
+#right-side-container {
+  flex: .5 4 0;
+  border-left: 2px solid var(--border-color);
+  padding: 0 1rem 1rem 1rem;
+}
+
+main h2 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0.85em;
+}
+
+main a {
+  color: var(--main-click-color);
+}
+
+main a:hover {
+  color: var(--main-click-hover);
+}
+
+/*#########################################
+
+Footer Styles
+
+############################################*/
+
+footer {
+  margin-top: 0.65rem;
+  text-align: center;
+}
+
+/*#########################################
+
+Navigation Styles
+
+############################################*/
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+nav li {
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--text-color);
+  background-color: var(--nav-hover);
+}
+
+
+/*#########################################
+
+Form Flex Layout Styles
+
+############################################*/
+
+.form-item {
+  display: flex;
+  /* justify-content: stretch; */
+  padding-left: 0.5em;
+  padding-top: 0.5rem;
+}
+
+.form-item.col {
+  flex-direction: column;
+}
+
+.form-item.row {
+  flex-direction: row;
+}
+
+.form-row {
+  display: flex;
+  /* flex-flow: row nowrap; */
+}
+
+.form-row > .form-item {
+  flex: 1 1 0;
+}
+
+/*#########################################
+
+Form Element Styles
+
+############################################*/
+
+form legend {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+form input,
+form label,
+form select,
+form button {
+  font-size: 0.9rem;
+  display: block;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5em;
+  border-radius: 0.35em;
+  border: 2px solid var(--border-color);
+}
+form label {
+  white-space: nowrap;
+  padding-bottom: 0.3rem;
+}
+.form-item.row label {
+  padding-bottom: 0rem;
+}
+fieldset {
+  margin-top: 1rem;
+}
+
+fieldset:last-of-type {
+
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+	columns: 2;
+}
+
+form button {
+  margin: 0.25rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--main-click-color);
+  border-color: var(--main-click-hover);
+  margin-left: auto;
+  margin-top: 1em;
+  font-weight: 600;
+  padding: 0.75em 2em;
+}
+
+form button:hover {
+  background-color: var(--main-click-hover);
+  -webkit-appearance: none;
+}
+
+/*#########################################
+
+Error messages
+
+############################################*/
+
+.error {
+  display: inline-block;
+  color: red;
+  padding: 0.5em;
+}
+
+.hidden {
+  display: none;
+}

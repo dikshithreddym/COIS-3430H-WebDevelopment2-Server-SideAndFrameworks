@@ -1,0 +1,62 @@
+.EmojiList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.EmojiList ul {
+  list-style: none;
+  padding: initial;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: start;
+  gap: 1.5em;
+  width: 80vw;
+}
+
+.EmojiList .emoji {
+  font-size: 3rem;
+  box-sizing: content-box;
+  width: 1.375em; /* 5.5rem */
+  height: 1.375em; /* 5.5rem */
+  padding: 0.375em; /* 1.5rem */
+  border-radius: 0.1875em; /* .75rem */
+  border: 0.0625em solid;
+  border-color: transparent;
+  text-align: center;
+  vertical-align: bottom;
+  background-image: radial-gradient(
+    40% 12.5% ellipse at center 80%,
+    rgb(0 0 0 / 0.2),
+    transparent
+  );
+  box-shadow: 0 0.1em 0.25em -0.1em rgb(0 0 0 / 0.5);
+
+  margin: initial;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+
+  /* Bezier values from https://www.joshwcomeau.com/animation/3d-button/ */
+  transition: transform 150ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  background-color: hsl(204, 77%, 69%);
+}
+
+.EmojiList .emoji.full-width {
+  width: max-content;
+}
+
+.EmojiList .emoji:is(:hover, :focus-visible),
+.EmojiList button:is(:hover, :focus-visible) {
+  transition: transform 150ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  transform: translateY(max(-1.5%, -0.1rem));
+}
+
+.EmojiList button {
+  font-size: 1rem;
+  padding: 1em;
+}
