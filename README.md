@@ -1,5 +1,7 @@
 # COIS 3430H – Web Development II: Server-Side and Frameworks
 
+COIS-3430H-WebDevelopment2-Server-SideAndFrameworks/Labs/Loki/3430/
+
 This directory contains lab work and assignments completed for the course **COIS 3430H** at Trent University.
 
 ## 📁 Structure
