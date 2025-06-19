@@ -1,12 +1,25 @@
-# React + Vite
+## 🚀 Mini X – React-Based Social Media Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Twitter-like social platform built using **React** and modular components.
 
-Currently, two official plugins are available:
+### 🛠 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User authentication: Register, log in, and securely access your account.
+- 📝 Create, like/unlike, and reply to posts.
+- 💬 Direct messaging system between users.
+- 📍 Integrated geolocation services.
+- ☀️🌙 Theme toggle (Light/Dark mode) with localStorage persistence.
+- 🌦️📰 Enriched user feed with third-party **weather** and **news** APIs.
+- 🔒 Context-based authentication using local storage and session-backed PHP APIs.
 
-## Expanding the ESLint configuration
+### 🧩 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, HTML, CSS, JavaScript  
+- **Backend:** PHP, MySQL  
+- **APIs:** OpenWeather, NewsAPI  
+- **Auth:** Context + LocalStorage + PHP Session
+
+### 📺 Live Demo
+
+👉 [Click here to try Mini X](https://loki.trentu.ca/~dmacherla/www_data/Assig)
+
