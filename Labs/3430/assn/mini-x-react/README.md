@@ -21,5 +21,5 @@ A Twitter-like social platform built using **React** and modular components.
 
 ### 📺 Live Demo
 
-👉 [Click here to try Mini X]([https://loki.trentu.ca/~dmacherla/www_data/Assig](https://loki.trentu.ca/~dmacherla/www_data/Assignment-3))
+👉 [Click here to try Mini X](https://loki.trentu.ca/~dmacherla/www_data/Assignment-3)
 
